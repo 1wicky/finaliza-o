@@ -1,0 +1,11 @@
+<h3>Cadastro Usuario</h3>
+
+<form action="/usuarios" method="POST">
+ nome: <input name="nome" type="text"/>
+ <br><br>
+ login: <input name="login" type="text" />
+ <br><br>
+ senha: <input name="senha" type="password" />
+ <br><br>
+  <button type="submit">Cadastrar</button>
+</form>

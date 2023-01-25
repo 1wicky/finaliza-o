@@ -1,0 +1,25 @@
+<h3>Atualize seu usuario:</h3>
+
+ {{#each usuarios}}
+ <form action='/atualizaUsuario' method='post'>
+ Nome: <input type='text' name='nome' value="{{nome}}">;
+  <br><br>
+ login: <input type='text' name='login' value="{{login}}">;
+  <br><br>
+ senha: <input type='text' name='senha' value="{{senha}}">
+  <br><br>
+<button>Atualizar</button>
+</form>
+{{/each}}
+
+Usuario.findAll().then(function(usuarios){
+    res.render('atualizaUsuario', {usuarios: usuarios.map(usuarios => usuarios.toJSON())})
+  }).catch(function (erro) {
+      console.log("Houve problema na busca do Usuario: " + erro);
+      res.send("Houve um erro na solicitação. Contate o administrador!");
+    });
+});
+
+app.get("/buscaUsuarios", function (req, res) {
+  res.render("buscaUsuarios");*/
+  

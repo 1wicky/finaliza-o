@@ -1,0 +1,7 @@
+Olá! Você está na página inicial!!!
+<br>
+O que deseja fazer? <br>
+<a href="buscaProdutos">Buscar Produtos</a>
+<a href="cadastraProdutos">Adicionar Produto</a>
+<a href="cadastraUsuario">Criar uma conta</a>
+<a href="atualizaUsuario">Busque Usuarios</a>
